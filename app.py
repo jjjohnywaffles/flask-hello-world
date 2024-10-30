@@ -31,7 +31,7 @@ def creating():
 
 @app.route('/db_insert')
 def inserting():
-    conn = psycopg2.connect("postgres://render_example_ocz5_user:password@hostname:port/database_name")
+    conn = psycopg2.connect("postgresql://jjjohnywaffles_user:EK7LeBnEN9tqa9jJwrWt3cOnvRRWG5LD@dpg-cshblsd6l47c73advt40-a/jjjohnywaffles")
     cur = conn.cursor()
     cur.execute('''
         INSERT INTO Basketball (First, Last, City, Name, Number) Values
